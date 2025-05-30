@@ -88,7 +88,7 @@ html {
   /* Line-height should always be unitless! */
   body {
     line-height: 1.5;
-    background-color: #f4f2ea;
+    background-color: #f9f9f9;
   }
   
   /* Tables still need 'cellspacing="0"' in the markup. */

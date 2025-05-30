@@ -1,2 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+:root {
+    --brandColor: #360e58;
+    --primaryColor: #370e59;
+    --lightPurple: #954cae;
+    --heroBg: #e6cffb;
+    --red: #a74f46;
+    --green: #5ba781;
+    --yellow: #b07836;
+    --mainFont: "montserrat";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: 1px solid #000;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    z-index: 1000;
+    font-family: var(--mainFont);
+}
+
+.logo {
+    color: var(--brandColor);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav-bar button {
+    background-color: #fff;
+    padding: 7px 20px;
+}
+.nav-bar button:hover {
+    background-color: var(--brandColor);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+    .nav-bar {
+        position: sticky;
+        top: 0;
+        padding: 20px;
+        background-color: var(--heroBg);
+        border: 1px solid var(--brandColor);
+    }
+}
