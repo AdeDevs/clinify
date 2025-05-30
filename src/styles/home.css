@@ -9,12 +9,10 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 50vw;
-    min-height: 80vh;
 }
 
 .landing .hero {
-    padding: 10px 20px 40px 50px;
+    padding: 20vw 20px 40px 50px;
     gap: 45px;
     box-sizing: border-box;
     height: 100%;
@@ -347,6 +345,8 @@
     background-color: #fff;
     min-width: 500px;
     height: 45vh;
+    max-height: 400px;
+    min-height: 270px;
     position: relative;
     border-radius: 20px;
     display: flex;
